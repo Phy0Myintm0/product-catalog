@@ -54,8 +54,8 @@
     </div>
     <script>
         const products = {
-            1: { id: 1, name: "Product 1", price: "$10", image: "product1.jpg" },
-            2: { id: 2, name: "Product 2", price: "$20", image: "product2.jpg" },
+            1: { id: 1, name: "Product 1", retail_price: "$10", wholesale_price: "$10",image: "product1.jpg" },
+            2: { id: 2, name: "Product 2", retail_price: "$20", wholesale_price: "$10",image: "product2.jpg" },
             // Add more products here
         };
 
@@ -78,7 +78,11 @@
                         </tr>
                         <tr>
                             <td>Price</td>
-                            <td>${product.price}</td>
+                            <td>${product.retail_price}</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td>${product.wholesale_price}</td>
                         </tr>
                     </table>
                 `;
